@@ -4,8 +4,27 @@ gem 'rails', '3.0.9'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
+gem 'rails', '3.0.9'
 
-gem 'sqlite3'
+if defined?(JRUBY_VERSION)
+gem 'jdbc-sqlite3'
+gem 'activerecord-jdbc-adapter'
+gem 'activerecord-jdbcsqlite3-adapter'
+gem 'jruby-openssl'
+gem 'jruby-rack'
+gem 'warbler'
+else
+gem 'sqlite3-ruby', :require => 'sqlite3'
+end
+
+group :development do
+gem 'rspec-rails', '2.6.0'
+end
+
+group :test do
+gem 'rspec', '2.6.0'
+gem 'webrat', '0.7.3'
+end
 
 # Use unicorn as the web server
 # gem 'unicorn'
