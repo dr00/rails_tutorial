@@ -26,6 +26,7 @@ gem 'rspec', '2.6.0'
 gem 'webrat', '0.7.3'
 end
 
+gem 'spork', '0.8.5'
 # Use unicorn as the web server
 # gem 'unicorn'
 

@@ -87,6 +87,7 @@ GEM
       railties (~> 3.0)
       rspec (~> 2.6.0)
     rubyzip (0.9.4)
+    spork (0.8.5)
     thor (0.14.6)
     treetop (1.4.9)
       polyglot (>= 0.3.1)
@@ -113,5 +114,6 @@ DEPENDENCIES
   rails (= 3.0.9)
   rspec (= 2.6.0)
   rspec-rails (= 2.6.0)
+  spork (= 0.8.5)
   warbler
   webrat (= 0.7.3)
